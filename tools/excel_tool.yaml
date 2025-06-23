@@ -1,0 +1,33 @@
+identity:
+  name: excel_tool
+  author: wangpengfei44
+  label:
+    en_US: Excel Tool
+    zh_Hans: Excel 工具
+    pt_BR: Ferramenta Excel
+
+description:
+  human:
+    en_US: Convert a 2D array JSON string into a styled Excel file (.xlsx), with support for merging cells, styling, and formatting.
+    zh_Hans: 将二维数组的 JSON 字符串转换为带样式的 Excel 文件（.xlsx），支持合并单元格、样式与格式设置。
+    pt_BR: Converta uma string JSON de matriz 2D em um arquivo Excel com estilos, mesclagem e formatação.
+  llm: Generate an Excel file from a JSON 2D array with optional formatting.
+
+parameters:
+  - name: data_json
+    type: string
+    required: true
+    label:
+      en_US: Excel Data JSON
+      zh_Hans: Excel 数据 JSON
+      pt_BR: Dados JSON para Excel
+    human_description:
+      en_US: A JSON string representing table data and optional settings like column widths, cell styles, merges, and row heights.
+      zh_Hans: 一个 JSON 字符串，表示表格数据及可选设置，如列宽、单元格样式、合并和行高等。
+      pt_BR: String JSON com dados de tabela e configurações opcionais como larguras de coluna, estilos, mesclagens e alturas de linha.
+    llm_description: JSON string for Excel generation with optional formatting.
+    form: llm
+
+extra:
+  python:
+    source: tools/excel_tool.py

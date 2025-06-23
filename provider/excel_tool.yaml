@@ -1,0 +1,19 @@
+identity:
+  author: wangpengfei44
+  name: excel_tool
+  label:
+    en_US: Excel Tool
+    zh_Hans: Excel 工具
+    pt_BR: Ferramenta Excel
+  description:
+    en_US: Easily convert 2D array data into a styled Excel (.xlsx) file.
+    zh_Hans: 将二维数组数据轻松转换为带样式的 Excel（.xlsx）文件。
+    pt_BR: Converta facilmente dados de matriz 2D em um arquivo Excel (.xlsx) com estilos.
+  icon: icon.svg
+
+tools:
+  - tools/excel_tool.yaml
+
+extra:
+  python:
+    source: provider/excel_tool.py
